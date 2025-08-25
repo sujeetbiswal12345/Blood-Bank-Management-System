@@ -175,11 +175,22 @@ Password: admin
 Add your images in `/screenshots` and link them below:  
 
 ### Application Interface  
-- ![Login Screen](login.png)  
-- ![Admin Dashboard](dashboard.png)  
-- ![Donor Management](donor-management.png)  
-- ![Stock Management](stock-management.png)  
-- ![Blood Requests](blood-requests.png) 
+
+**Login Screen**  
+![Login Screen](login.png)  
+
+**Admin Dashboard**  
+![Admin Dashboard](dashboard.png)  
+
+**Donor Management**  
+![Donor Management](donor-management.png)  
+
+**Stock Management**  
+![Stock Management](stock-management.png)  
+
+**Blood Requests**  
+![Blood Requests](blood-requests.png)  
+
 
 ---
 
