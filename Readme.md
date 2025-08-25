@@ -31,6 +31,35 @@ sql
 Copy
 Edit
 
+
+## 🔧 Creating Dynamic Web Project in Eclipse  
+
+Since this is a JSP + JDBC based project, it must be created as a **Dynamic Web Project** in Eclipse EE.  
+
+### Step-by-Step Instructions  
+
+1. **Open Eclipse IDE for Enterprise Java and Web Developers**  
+2. **Create New Project:**  
+   - `File → New → Dynamic Web Project`  
+
+3. **Enter project name:**  
+Blood_Bank_Management_System
+
+
+
+4. **Configure Project Settings:**  
+- Target runtime: **Apache Tomcat v9.0** (configured separately)  
+- Configuration: **Dynamic Web Module 3.x** (default)  
+
+5. Click **Finish**  
+
+6. **Setup Project Files:**  
+- Copy all JSP/HTML/CSS files into **WebContent** (or `src/main/webapp` if using Maven)  
+- Place `mysql-connector-j-9.4.0.jar` inside `WEB-INF/lib`  
+
+7. **Deploy and Run:**  
+- Right-click the project → `Run As → Run on Server` → Select **Tomcat v9**  
+
 ---
 
 ## ⚙️ Installation & Setup
@@ -208,30 +237,3 @@ Add your images in `/screenshots` and link them below:
 
 ---
 
-## 🔧 Creating Dynamic Web Project in Eclipse  
-
-Since this is a JSP + JDBC based project, it must be created as a **Dynamic Web Project** in Eclipse EE.  
-
-### Step-by-Step Instructions  
-
-1. **Open Eclipse IDE for Enterprise Java and Web Developers**  
-2. **Create New Project:**  
-   - `File → New → Dynamic Web Project`  
-
-3. **Enter project name:**  
-Blood_Bank_Management_System
-
-
-
-4. **Configure Project Settings:**  
-- Target runtime: **Apache Tomcat v9.0** (configured separately)  
-- Configuration: **Dynamic Web Module 3.x** (default)  
-
-5. Click **Finish**  
-
-6. **Setup Project Files:**  
-- Copy all JSP/HTML/CSS files into **WebContent** (or `src/main/webapp` if using Maven)  
-- Place `mysql-connector-j-9.4.0.jar` inside `WEB-INF/lib`  
-
-7. **Deploy and Run:**  
-- Right-click the project → `Run As → Run on Server` → Select **Tomcat v9**  
