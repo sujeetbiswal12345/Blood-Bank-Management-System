@@ -204,9 +204,7 @@ Add your images in `/screenshots` and link them below:
 | **DB Connection failed**  | Verify DB credentials and MySQL service status                        |
 
 ---
-
-## 📜 License  
-This project is licensed under the **MIT License** - see the LICENSE file for details.  
+ 
 
 ---
 
