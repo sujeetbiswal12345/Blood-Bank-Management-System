@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+String role = (String) session.getAttribute("role");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.header .logo img {
+  height: 70px;   /* bigger logo */
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <a href="index.jsp"><img src="Logo1.png" alt="Logo"></a>
+  </div>
+  <div class="navbar">
+    <%
+    if("admin".equals(role)) {
+    %>
+        <a href="home.jsp">Home</a>
+        <a href="addNewDonor.jsp">Add Donor</a>
+        <a href="editDeleteList.jsp">Edit / Delete Donors</a>  <!-- ✅ fixed -->
+        <a href="manageStock.jsp">Manage Stock</a>
+        <a href="requestPending.jsp">Request Blood</a>
+		<a href="completedRequest.jsp">Completed Requests</a>
+        <a href="logout.jsp" style="margin-left:30px; background:#f44336;">Logout</a>
+    <%
+    } else {
+    %>
+        <a href="adminLogin.jsp">Admin Login</a>
+    <%
+    }
+    %>
+  </div>
+</div>
